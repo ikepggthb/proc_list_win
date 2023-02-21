@@ -19,6 +19,7 @@ int main(){
 }
 ```
 
+# About the app_list_s structure
 
 
 ``` c
@@ -30,7 +31,6 @@ typedef struct APP_LIST {
 
 ```
 
-# About the app_list_s structure
 ```
 count - The number of processes (size_t)
 
