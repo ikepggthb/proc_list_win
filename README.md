@@ -37,7 +37,7 @@ typedef struct APP_LIST {
 ```
 
 ```
-count - The number of processes (size_t)
+count - Number of processes (size_t)
 
 names --- process name (char *)
        |
