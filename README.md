@@ -7,13 +7,18 @@ A very simple code written in c language to get a list of processes on Windows
 #include "proc_list.h"
 
 int main(){
-  app_list_s list;
+  app_list_s* list;
   
-  new_proc_list(&proc_list);
+  new_proc_list(proc_list);
   
-  get_process_list(&proc_list);
+  get_process_list(proc_list);
+  
+  # print
+  for(int i = 0 ; i < list->count; ++i){
+    printf("%s\n",list->names[i]);
+  }
  
-  del_proc_list(&proc_list);
+  del_proc_list(proc_list);
   
   return 0;
 }
