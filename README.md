@@ -9,16 +9,16 @@ A very simple code written in c language to get a list of processes on Windows
 int main(){
   app_list_s* list;
   
-  new_app_list(proc_list);
+  new_app_list(list);
   
-  get_process_list(proc_list);
+  get_process_list(list);
   
   # print
   for(int i = 0 ; i < list->count; ++i){
     printf("%s\n",list->names[i]);
   }
  
-  del_app_list(proc_list);
+  del_app_list(list);
   
   return 0;
 }
