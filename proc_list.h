@@ -7,10 +7,13 @@
 #endif
 
 
-typedef struct APP_LIST {
+typedef struct
+APP_LIST
+{
     size_t count;
     char** names;
-} app_list_s;
+}
+app_list_s;
 
 PROC_LIST_API int new_app_list(app_list_s* list);
 PROC_LIST_API int del_app_list(app_list_s* list);
